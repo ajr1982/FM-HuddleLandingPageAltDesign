@@ -1,0 +1,92 @@
+main {
+    padding: 0;
+    width: 100vw;
+
+}
+
+.two-col-block{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    @include for-desktop{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.four-col-block {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    // @include for-desktop{
+    //     flex-direction: row;
+    //     align-items: center;
+         justify-content: flex-start;
+    // }
+}
+
+
+.two-col-block {
+    // @include rounded-raised-div;
+   // margin-bottom: 11.2vw;
+    padding: 10.93vw;
+    align-content: stretch;
+    @include for-desktop {
+        padding: 3.472vw 7.333vw;
+        margin-bottom: 2.77vw;
+    }
+
+}
+.two-col-block.reverse{
+    @include for-desktop{
+        flex-direction: row-reverse;
+    }
+}
+.two-col-left,
+.two-col-right {
+    width: 100%;
+    
+    padding: 0;
+
+    @include for-desktop {
+        padding-left: 8.194vw;
+        flex:1;
+
+    }
+
+}
+
+
+
+.two-col-right {
+
+    margin-bottom: 6vw;
+
+    @include for-desktop {
+        margin-bottom: 0;
+
+    }
+}
+
+.two-col-left {
+    
+    margin-bottom: 6vw;
+
+    @include for-desktop {
+        margin-bottom: 0;
+        
+    }
+}
+
+// .four-col {
+//     //@include element-boundary;
+//     @include for-desktop{
+//     flex-basis: 365px;
+//     }
+// }
+
+img {
+    width: 100%;
+}
