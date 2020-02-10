@@ -1,7 +1,7 @@
 header {
     padding: 0 5.333vw;
     width: 100vw;
-   // background-color: $huddle-cyan-light;
+    // background-color: $huddle-cyan-light;
     // background-image: url(../images/bg-hero-mobile.svg);
 
     // @include for-desktop {
@@ -10,8 +10,9 @@ header {
 
 
     p {
-    color: #000000;
+        color: #000000;
     }
+
     .two-col-block {
         background-color: transparent;
         border-radius: 0;
@@ -19,18 +20,17 @@ header {
     }
 }
 
-.top-bar {
+.header__top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3vw 0;
 }
 
-.header_logo {
+.header__logo {
     width: 28vw;
 
     @include for-desktop {
         width: 14.097vw;
     }
 }
-

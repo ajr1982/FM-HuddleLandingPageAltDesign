@@ -1,57 +1,67 @@
 main {
     background-color: #ffffff;
 }
-.stat-block{
-    
+
+.stat-block {
+
     width: 100%;
-    
-    @include for-desktop{
+
+    @include for-desktop {
         width: 20.833vw;
     }
-  
+
 }
-.stat-icon{
+
+.stat-block__stat-icon {
     width: 8.8vw;
-    margin-left:10vw;
-    @include for-desktop{
+    margin-left: 10vw;
+
+    @include for-desktop {
         width: 3.47vw;
-        margin-left:0;
+        margin-left: 0;
     }
 }
-.stat{
+
+.stat-block__stat {
     color: #000000;
-    font-size:20vw;
+    font-size: 20vw;
     text-align: center;
     font-family: $heading-font;
-    margin:0;
-    @include for-desktop{
+    margin: 0;
+
+    @include for-desktop {
         font-size: 8vw;
     }
 }
-.stat-desc{
-    
+
+.stat-block__stat-desc {
+
     font-size: 3.73vw;
     text-align: center;
     font-family: $heading-font;
-    margin:0;
-    @include for-desktop{
+    margin: 0;
+
+    @include for-desktop {
         font-size: 1.597vw;
     }
 }
-.floating{
+
+.floating {
     width: 93.6vw;
     margin: 0 auto;
     margin-bottom: 11vw;
     text-align: center;
-    padding:4vw;
+    padding: 4vw;
     z-index: 999;
     //@include rounded-raised-div;
-    
-    .cta-pink{
+
+    .cta__btn--large {
         margin: 0 auto;
     }
 }
-.wave-1:before,.wave-2:before{
+
+.wave-1:before,
+.wave-2:before {
     content: "";
     display: block;
     height: 10vw;
@@ -59,39 +69,51 @@ main {
     background-size: 103% 10vw;
     background-repeat: no-repeat;
 }
-    .wave-1:after,.wave-2:after{
-        content: "";
-        display: block;
-        height: 10vw;
-        width: 100%;
-        background-size: 103% 10vw;
-        background-repeat: no-repeat;
+
+.wave-1:after,
+.wave-2:after {
+    content: "";
+    display: block;
+    height: 10vw;
+    width: 100%;
+    background-size: 103% 10vw;
+    background-repeat: no-repeat;
+}
+
+.wave-1:before {
+    background-image: url(../images/bg-section-top-mobile-1.svg);
+
+    @include for-desktop {
+        background-image: url(../images/bg-section-top-desktop-1.svg);
     }
-    .wave-1:before{
-        background-image: url(../images/bg-section-top-mobile-1.svg);
-        @include for-desktop{
-            background-image: url(../images/bg-section-top-desktop-1.svg);
-        }
+}
+
+.wave-1:after {
+    background-image: url(../images/bg-section-bottom-mobile-1.svg);
+
+    @include for-desktop {
+        background-image: url(../images/bg-section-bottom-desktop-1.svg);
     }
-    .wave-1:after{
-        background-image: url(../images/bg-section-bottom-mobile-1.svg);
-        @include for-desktop{
-            background-image: url(../images/bg-section-bottom-desktop-1.svg);
-        }
+}
+
+.wave-2:before {
+    background-image: url(../images/bg-section-top-mobile-2.svg);
+
+    @include for-desktop {
+        background-image: url(../images/bg-section-top-desktop-2.svg);
     }
-    .wave-2:before{
-        background-image: url(../images/bg-section-top-mobile-2.svg);
-        @include for-desktop{
-            background-image: url(../images/bg-section-top-desktop-2.svg);
-        }
+}
+
+.wave-2:after {
+    background-image: url(../images/bg-section-bottom-mobile-2.svg);
+
+    @include for-desktop {
+        background-image: url(../images/bg-section-bottom-desktop-2.svg);
     }
-    .wave-2:after{
-        background-image: url(../images/bg-section-bottom-mobile-2.svg);
-        @include for-desktop{
-            background-image: url(../images/bg-section-bottom-desktop-2.svg);
-        }
-    }
-    .wave-1 .two-col-block, .wave-2 .two-col-block{
-        background-color: $huddle-cyan-light;
-        margin: -2px 0;
-    }
+}
+
+.wave-1 .two-col-block,
+.wave-2 .two-col-block {
+    background-color: $huddle-cyan-light;
+    margin: -2px 0;
+}

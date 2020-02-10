@@ -26,23 +26,23 @@
 <body>
 
   <header>
-    <div class="top-bar">
-      <img class="header_logo" src="images/logo.svg" alt="Huddle Logo">
+    <div class="header__top-bar">
+      <img class="header__logo" src="images/logo.svg" alt="Huddle Logo">
       <a href="#" class="cta">
-        <div class="btn-white">Try It Free</div>
+        <div class="cta__btn">Try It Free</div>
       </a>
     </div>
     <div class="two-col-block">
-      <div class="two-col-left reverse">
+      <div class="two-col-block__col-left reverse">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
           Create connections with your users as you engage in genuine discussion. </p>
         <a href="#" class="cta">
-          <div class="btn-pink">Get Started For Free</div>
+          <div class="cta__btn cta__btn--pink">Get Started For Free</div>
         </a>
       </div>
 
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
         <img src="images/screen-mockups.svg" alt="Screen mockups">
       </div>
     </div>
@@ -50,18 +50,18 @@
   <main>
     <section id="statistics">
       <div class="two-col-block">
-        <div class="two-col-left">
+        <div class="two-col-block__col-left">
           <div class="stat-block">
-            <img class="stat-icon" src="images/icon-communities.svg" alt="1.1 Million">
-            <p class="stat">1.4k+</p>
-            <p class="stat-desc">Communities Formed</p>
+            <img class="stat-block__stat-icon" src="images/icon-communities.svg" alt="1.1 Million">
+            <p class="stat-block__stat">1.4k+</p>
+            <p class="stat-block__stat-desc">Communities Formed</p>
           </div>
         </div>
-        <div class="two-col-right">
+        <div class="two-col-block__col-right">
           <div class="stat-block">
-            <img class="stat-icon" src="images/icon-messages.svg" alt="2.7 Million">
-            <p class="stat">2.7m+</p>
-            <p class="stat-desc">Messages Sent</p>
+            <img class="stat-block__stat-icon" src="images/icon-messages.svg" alt="2.7 Million">
+            <p class="stat-block__stat">2.7m+</p>
+            <p class="stat-block__stat-desc">Messages Sent</p>
           </div>
         </div>
 
@@ -70,10 +70,10 @@
     <section id="features">
       <div class="wave-1">
         <div class="two-col-block reverse">
-          <div class="two-col-left">
+          <div class="two-col-block__col-left">
             <img src="images/illustration-grow-together.svg" alt="Grow Together">
           </div>
-          <div class="two-col-right">
+          <div class="two-col-block__col-right">
             <h2>Grow Together</h2>
             <p>Generate meaningful discussions with your audience and build a strong, loyal community.
               Think of the insightful conversations you miss out on with a feedback form.</p>
@@ -82,10 +82,10 @@
       </div>
       <div>
         <div class="two-col-block">
-          <div class="two-col-left">
+          <div class="two-col-block__col-left">
             <img src="images/illustration-flowing-conversation.svg" alt="FLowing Conversation">
           </div>
-          <div class="two-col-right">
+          <div class="two-col-block__col-right">
             <h2>Flowing Conversations</h2>
             <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads
               have just-in-time loading for a more natural flow.</p>
@@ -95,10 +95,10 @@
       <div class="wave-2">
         <div class="two-col-block reverse">
 
-          <div class="two-col-left">
+          <div class="two-col-block__col-left">
             <img src="images/illustration-your-users.svg" alt="Your Users">
           </div>
-          <div class="two-col-right">
+          <div class="two-col-block__col-right">
             <h2>Your Users</h2>
             <p>It takes no time at all to integrate Huddle with your app's authentication solution.
               This means, once signed in to your app, your users can start chatting immediately.</p>
@@ -109,14 +109,14 @@
     <div class="floating">
       <h3>Ready To Build Your Community?</h3>
       <a href="#" class="cta">
-        <div class="btn-pink cta-pink">Get Started For Free</div>
+        <div class="cta__btn cta__btn--pink cta__btn--large">Get Started For Free</div>
       </a>
     </div>
   </main>
   <section class="footer">
 
     <div class="two-col-block">
-      <div class="two-col-left">
+      <div class="two-col-block__col-left">
         <div class="newsletter">
 
           <h2>Newsletter</h2>
@@ -128,7 +128,7 @@
           </form>
         </div>
       </div>
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
 
         <div class="contact">
           <svg class="footer_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 39">
@@ -141,22 +141,22 @@
                 fill="#00252E" />
             </g>
           </svg>
-          <p class="address">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <p class="contact__address">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua</p>
-          <p class="tel"><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
-          <p class="email"><a href="mailto:example@huddle.com">example@huddle.com</a></p>
+          <p class="contact__tel"><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
+          <p class="contact__email"><a href="mailto:example@huddle.com">example@huddle.com</a></p>
         </div>
 
         <div class="social">
-          <div id="social_links">
-            <a href="#" class="instagram">
+          <div class="social-links">
+            <a href="#" class="social-links__icon social-links__icon--instagram">
               <ion-icon name="logo-instagram">Instagram</ion-icon>
               </ion-icon>
             </a>
-            <a href="#" class="facebook">
+            <a href="#" class="social-links__icon social-links__icon--facebook">
               <ion-icon name="logo-facebook">Facebook</ion-icon>
             </a>
-            <a href="#" class="twitter">
+            <a href="#" class="social-links__icon social-links__icon--twitter">
               <ion-icon name="logo-twitter">Twitter</ion-icon>
             </a>
           </div>
